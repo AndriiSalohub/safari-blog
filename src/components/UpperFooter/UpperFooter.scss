@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+.upper-footer{
+    background-image: url(images/pattern.png);
+    padding: 80px 30px;
+    &-find-us{
+        &-social-network-menu{
+            display: flex;
+            &-items{
+                margin-top: 10px;
+                margin-right: 5px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &-contact-us{
+        margin-bottom: 40px;
+    }
+}
+
+.upper-footer-title{
+    color: #be984f;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.icons{
+    width: 16px;
+    height: 16px;
+}
+
+.facebook-icon{
+    margin-left: 3px;
+}
+
+.upper-footer-text{
+    color: #be984f;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.localization-text-block-paragraph{
+    margin-top: 10px !important;
+}
+
+@media(min-width:768px){
+    .upper-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &-contact-us{
+            margin-right: 30px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+@media(min-width:1024px){
+    .upper-footer{
+        padding: 80px 60px;
+        &-contact-us{
+            margin-right: 80px;
+        }
+    }
+    .upper-footer-title{
+        font-size: 18px;
+    }
+    
+}
+
+
+@media(min-width:1200px){
+    .upper-footer{
+        padding: 80px 200px;
+    }
+}
+
+@media(min-width:1600px){
+    .upper-footer{
+        padding: 80px 400px;
+    }
+}

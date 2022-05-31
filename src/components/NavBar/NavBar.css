@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.nav-bar {
+  background-color: #e0dad0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-bar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar-logo img {
+  width: 135px;
+}
+
+.nav-bar-humburger-menu-icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.nav-bar-menu {
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+  transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+}
+
+.nav-bar-menu-item {
+  text-align: center;
+  background-color: #e0dad0;
+}
+
+.nav-bar-menu-item a {
+  text-decoration: none;
+  color: #b08c42;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.nav-bar-menu-item:hover {
+  background: #ddd7cc;
+}
+
+.nav-link-selected-hamburger {
+  background-color: #ddd7cc;
+}
+
+.active-menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+  transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+}
+
+.nav-link-selected {
+  border-bottom-color: #b08c42 !important;
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    background-color: #e0dad0;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .nav-bar-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .nav-bar-logo img {
+    width: 135px;
+    margin: 0px 0;
+  }
+  .nav-bar-humburger-menu-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  .nav-bar-menu {
+    position: fixed;
+    width: 50vh;
+    z-index: 1000;
+    -webkit-transition: opacity 0.5s, height 0.5s ease-in-out;
+    transition: opacity 0.5s, height 0.5s ease-in-out;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 100px;
+    margin-right: 20px;
+  }
+  .nav-bar-menu-item {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #e0dad0;
+  }
+  .nav-bar-menu-item a {
+    text-decoration: none;
+    color: #b08c42;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+  }
+  .nav-bar-menu-item:hover {
+    background: #ddd7cc;
+  }
+  .active {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s, height 0.5s ease-in-out;
+    transition: opacity 0.5s, height 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e0dad0;
+    padding: 20px 0;
+  }
+  .navigation-bar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation-bar-menu-item {
+    padding: 0 30px;
+  }
+  .navigation-bar-menu-item a {
+    text-decoration: none;
+    color: #b08c42;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    border-color: #b08b4200;
+    border-style: solid;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    -webkit-transition: border-bottom-color .3s ease-in-out;
+    transition: border-bottom-color .3s ease-in-out;
+  }
+  .navigation-bar-menu-item a:hover {
+    border-style: solid;
+    padding-bottom: 10px;
+    border-bottom-color: #b08c42;
+    border-bottom-width: 1px;
+    -webkit-transition: border-bottom-color .3s ease-in-out;
+    transition: border-bottom-color .3s ease-in-out;
+  }
+  .navigation-bar-menu-img-logo {
+    width: 150px;
+  }
+  .navigation-bar-logo img {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

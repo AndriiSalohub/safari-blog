@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.nav-bar{
+    background-color: #e0dad0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    &-logo{
+        display: flex;
+        justify-content: center;
+        & img{
+            width: 135px;
+        }
+    }
+    &-humburger-menu-icon{
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    &-menu{
+        position: fixed;
+        width: 100vw;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+        &-item{
+            text-align: center;
+            background-color: #e0dad0;
+            & a{
+                text-decoration: none;
+                color: #b08c42;
+                font-family: 'Nunito', sans-serif;
+                font-size: 13px;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 10px 0;
+            }
+            &:hover{
+                background: #ddd7cc;
+            }
+        }
+    }
+}
+
+.nav-link-selected-hamburger{
+    background-color: #ddd7cc;
+}
+
+
+.active-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, height 0.5s, visibility 0.5s ease-in-out;
+}
+
+.nav-link-selected{
+    border-bottom-color: #b08c42 !important;
+}
+
+
+
+@media (min-width:768px) {
+    .nav-bar{
+        background-color: #e0dad0;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        &-logo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            & img{
+                width: 135px;
+                margin: 0px 0;
+            }
+        }
+        &-humburger-menu-icon{
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+        &-menu{
+            position: fixed;
+            width: 50vh;
+            z-index: 1000;
+            transition: opacity 0.5s, height 0.5s ease-in-out;
+            justify-self: center;
+            margin-top: 100px;
+            margin-right: 20px;
+            &-item{
+                padding: 15px 0;
+                text-align: center;
+                background-color: #e0dad0;
+                & a{
+                    text-decoration: none;
+                    color: #b08c42;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 16px;
+                }
+                &:hover{
+                    background: #ddd7cc;
+                }
+            }
+        }
+    }
+    .active{
+        opacity: 1;
+        transition: opacity 0.5s, height 0.5s ease-in-out;
+    }
+}
+
+@media (min-width:1200px) {
+    .navigation-bar{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #e0dad0;
+        padding: 20px 0;
+        &-menu{
+            display: flex;
+            align-items: center;
+            &-item{
+                padding: 0 30px;
+                & a{
+                    text-decoration: none;
+                    color: #b08c42;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 17px;
+                    border-color: #b08b4200;
+                    border-style: solid;
+                    padding-bottom: 10px;
+                    border-bottom-width: 1px;
+                    transition: border-bottom-color .3s ease-in-out;
+                    &:hover{
+                        border-style: solid;
+                        padding-bottom: 10px;
+                        border-bottom-color: #b08c42;
+                        border-bottom-width: 1px;
+                        transition: border-bottom-color .3s ease-in-out;
+                    }
+                }
+            }
+            &-img{
+                    &-logo{
+                        width: 150px;
+                    }
+            }
+        }
+        &-logo{
+            & img{
+                width: 150px;
+            }
+        }
+    }
+}

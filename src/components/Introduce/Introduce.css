@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Roboto+Slab&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.introduce-block {
+  padding: 0 30px;
+  background-color: #e0dbd1;
+}
+
+.introduce {
+  background-color: #d8cfc5;
+  padding: 60px 5% 30px;
+}
+
+.introduce-photo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.introduce-information-image {
+  margin-bottom: 20px;
+}
+
+.introduce-information-title {
+  color: #99782f;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 30px;
+}
+
+.introduce-information-text {
+  color: #99782f;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
+}
+
+.introduce-information-btn {
+  background-color: #b0893d;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.introduce-information-btn a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .introduce-container {
+    height: 600px;
+  }
+  .introduce-background {
+    background-image: url(images/pattern.png);
+    height: 200px;
+    position: relative;
+  }
+  .introduce-block {
+    background-color: #e0dbd100;
+    position: absolute;
+    top: 80px;
+  }
+  .introduce {
+    background-color: #d8cfc5;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .introduce-information-image {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .introduce-information-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .introduce-information-text {
+    color: #99782f;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .introduce-container {
+    height: 700px;
+  }
+  .introduce {
+    grid-gap: 40px;
+  }
+  .introduce-information-image {
+    padding-top: 30px;
+  }
+  .introduce-information-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .introduce-information-text {
+    color: #99782f;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .introduce-block {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduce-container {
+    height: 750px;
+  }
+  .introduce-block {
+    padding: 0 200px;
+  }
+  .introduce-information-text {
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .introduce-container {
+    height: 800px;
+  }
+  .introduce-block {
+    padding: 0 400px;
+  }
+}
+/*# sourceMappingURL=Introduce.css.map */
