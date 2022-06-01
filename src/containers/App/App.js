@@ -14,6 +14,7 @@ import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "../../components/Footer/Footer";
+import { ArticlesList } from "../../components/Articles/ArticlesList";
 
 export const App = () => {
     return (
@@ -35,7 +36,7 @@ export const App = () => {
                     element={
                         <div>
                             {" "}
-                            <NavBar />
+                            <NavBar /> <ArticlesList />
                             <UpperFooter /> <Footer />
                         </div>
                     }

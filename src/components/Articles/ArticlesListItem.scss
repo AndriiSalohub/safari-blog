@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+.articles-list-item{
+    margin-bottom: -3px;
+    position: relative;
+    overflow: hidden;
+    &-img{
+        width: 100%;
+    }
+    &-title{
+        padding: 30px 30px 30px 30px;
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        font-size: 25px;
+        transition: margin-bottom .3s ease-in-out;
+        & a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &-border-block{
+        position: absolute;
+        bottom: 20px;
+        left: 25px;
+        width: 0%;
+        height: 1%;
+        z-index: 100;
+        transition: width .3s ease-in-out;
+        &-border{
+            position: relative;
+            background-color: #ffec9e;
+            width: 100%;
+            height: 3px;
+        }
+    }
+    &:hover .articles-list-item-border-block{
+        width: 30%;
+        transition: width .3s ease-in-out;
+    }
+
+    &:hover .articles-list-item-title{
+        margin-bottom: 20px;
+        transition: margin-bottom .3s ease-in-out;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 3px;
+        background: rgba(0,0,0,.2);
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+     &:hover::before {
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+    }
+}
+
+
+.articles-list-item-title:hover .articles-list-item-title a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 20px;
+    width: 100px;
+    transition: all .4s ease-out;
+    z-index: 10000;
+    background-color: #99362f;
+}
+
+@media(min-width:768px){
+    .articles-list-item{
+        &-title{
+            font-size: 35px;
+        }
+    }
+}
