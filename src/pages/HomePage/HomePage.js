@@ -1,10 +1,4 @@
 import React from "react";
-import { QuoteSlider } from "../../components/QuoteSlider/QuoteSlider";
-import { Introduce } from "../../components/Introduce/Introduce";
-import { SliderList } from "../../components/SliderList/SliderList";
-import { TripInfo } from "../../components/TripInfo/TripInfo";
-import { VideoPopup } from "../../components/VideoPopup/VideoPopup";
-import { UpperFooter } from "../../components/UpperFooter/UpperFooter";
 export const HomePage = () => {
     return (
         <>
@@ -24,8 +18,6 @@ export const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <TripInfo /> <Introduce /> <SliderList /> <QuoteSlider />{" "}
-            <VideoPopup /> <UpperFooter />
         </>
     );
 };
