@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap');
+
+.our-mission{
+    background-image: url(images/pattern.png);
+    padding-top: 50px;
+    &-item{
+        padding: 0 30px;
+        &-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-information{
+            &-title{
+                text-align: center;
+                font-weight: 700;
+                font-family: 'Roboto Slab', serif;
+                color: #99782f;
+                font-size: 25px;
+                line-height: 29px;
+                padding: 20px 0px;
+            }
+            &-description{
+                color: #99782f;
+                text-align: center;
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .our-mission{
+        &-item{
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            padding-bottom: 80px;
+            &-information{
+                &-title{
+                    font-size: 36px;
+                    line-height: 41px;
+                }
+                &-description{
+                    padding: 0 40px 20px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .our-mission{
+        &-item{
+            padding: 0 60px;
+            padding-bottom: 80px;
+            &-information{
+                &-title{
+                    font-size: 36px;
+                    line-height: 41px;
+                }
+                &-description{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1440px){
+    .our-mission{
+        &-item{
+            padding: 0 120px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+@media(min-width:1920px){
+    .our-mission{
+        &-item{
+            padding: 0 240px;
+            padding-bottom: 80px;
+            &-information{
+                margin-left: -200px;
+                &-description{
+                    font-size: 16px;
+                    padding: 0 300px 20px 300px;
+                }
+            }
+        }
+    }
+}
