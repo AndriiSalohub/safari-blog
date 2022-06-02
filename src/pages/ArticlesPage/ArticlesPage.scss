@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+.articles-page{
+    &-navbar-img-block{
+        background-image: url(images/articles-page-background.jpg);
+        height: 60vh;
+        width: 100%;
+        background-position: 34% 75%;
+        position: relative;
+        &-title{
+            width: 100%;
+            padding: 0 30px;
+            position: absolute;
+            color: #ffec9e;
+            font-size: 41px;
+            line-height: 42px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            text-align: center;
+            font-weight: 700;
+            font-family: 'Roboto Slab', serif;
+        }
+        &-img{
+            width: 0%;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .articles-page{
+        &-navbar-img-block{
+            background-image: none;
+            height: 50vh;
+            &-title{
+                padding: 0 100px;
+                font-size: 58px;
+                line-height: 60px;
+            }
+            &-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .articles-page{
+        &-navbar-img-block{
+            &-title{
+                padding: 0 200px;
+                font-size: 68px;
+                line-height: 70px;
+            }
+        }
+    }
+}
+
+@media(min-width:1440px){
+    .articles-page{
+        &-navbar-img-block{
+            background-image: none;
+            height: 70vh;
+            &-title{
+                padding: 0 400px;
+            }
+        }
+    }
+}
+
+@media(min-width:1920px){
+    .articles-page{
+        &-navbar-img-block{
+            background-image: none;
+            height: 60vh;
+            &-title{
+                padding: 0 600px;
+            }
+        }
+    }
+}
