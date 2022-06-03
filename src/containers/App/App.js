@@ -17,8 +17,10 @@ import { Footer } from "../../components/Footer/Footer";
 import { ArticlesList } from "../../components/Articles/ArticlesList";
 import { OurMission } from "../../components/OurMission/OurMission";
 import { ArticlesPage } from "../../pages/ArticlesPage/ArticlesPage";
+import { useSelector } from "react-redux";
 
 export const App = () => {
+    const articlePath = useSelector((state) => state.pathDetect);
     return (
         <>
             <Routes>
@@ -82,7 +84,7 @@ export const App = () => {
                     }
                 />
                 <Route
-                    path="our-travels/article"
+                    path={`our-travels/${articlePath[1]}`}
                     element={
                         <div>
                             {" "}

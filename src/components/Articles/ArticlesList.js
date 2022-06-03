@@ -8,9 +8,14 @@ export const ArticlesList = () => {
         <>
             <h3 className="articles-list-title">Our travels</h3>
             <div className="articles-list-container">
-                {articlesArray.map(({ id, img, title }) => (
+                {articlesArray.map(({ id, img, title, path }) => (
                     <div key={id}>
-                        <ArticlesListItem id={id} img={img} title={title} />
+                        <ArticlesListItem
+                            id={id}
+                            img={img}
+                            title={title}
+                            path={path}
+                        />
                     </div>
                 ))}
             </div>
