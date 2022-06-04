@@ -1,11 +1,10 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "./ArticlesListItem.scss";
 
 export const ArticlesListItem = ({ id, img, title, path }) => {
     const dispatch = useDispatch();
-    const detectionPath = useSelector((state) => state.pathDetect);
 
     const detectPath = (path) => {
         dispatch({
