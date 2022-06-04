@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./ArticlesListItem.scss";
 
 export const ArticlesListItem = ({ id, img, title, path }) => {
+    window.scrollTo(0, 0);
     const dispatch = useDispatch();
 
     const detectPath = (path) => {

@@ -27,11 +27,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <Provider store={store}>
         <BrowserRouter>
-            <React.StrictMode>
-                <PersistGate loading={null} persistor={persistor}>
-                    <App />
-                </PersistGate>
-            </React.StrictMode>
+            <PersistGate loading={null} persistor={persistor}>
+                <App />
+            </PersistGate>
         </BrowserRouter>
     </Provider>
 );
