@@ -1,0 +1,150 @@
+.authors{
+    height: 1620px;
+    &-first-author{
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+    &-second-author{
+        padding: 30px;
+        &-container{
+            background-color: #d8cfc5;
+                background-color: #d8cfc5;
+                padding: 60px 5% 30px;
+                &-photo{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                &-information{
+                    &-image{
+                        margin-bottom: 20px;
+                    }
+                    &-title{
+                        color: #99782f;
+                        font-size: 18px;
+                        line-height: 21px;
+                        font-weight: 700;
+                        font-family: 'EB Garamond', serif;
+                        margin-bottom: 30px;
+                    }
+                    &-text{
+                        color: #99782f;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-family: 'Roboto', sans-serif;
+                        margin-bottom: 30px;
+                    }
+                    &-btn{
+                        background-color: #b0893d;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        & a{
+                            display: block;
+                            width: 100%;
+                            padding: 15px;
+                            text-decoration: none;
+                            color: #fff;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                    }
+                
+            }
+            
+        }
+    }
+}
+
+
+@media(min-width:768px){
+    .authors{
+        height: 990px;
+        &-first-author{
+            padding: 0 0 430px 0;
+        }
+        &-second-author{
+            padding: 30px;
+            &-container{
+                background-color: #d8cfc5;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                &-information{
+                    &-image{
+                        margin-bottom: 20px;
+                        padding-top: 20px;
+                    }
+                    &-title{
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                    &-text{
+                        color: #99782f;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-family: 'Roboto', sans-serif;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .introduce-block{
+        top: -60px !important;
+    }    
+}
+
+@media(min-width:1024px){
+    .authors{
+        height: 1180px;
+        &-first-author{
+            padding: 0 0 490px 0;
+        }
+        &-second-author{
+            padding: 60px;
+            &-container{
+                grid-gap: 40px;
+                &-information{
+                    &-image{
+                        padding-top: 30px;
+                    }
+                    &-title{
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
+                    &-text{
+                        color: #99782f;
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+
+@media(min-width:1440px){
+    .authors{
+        height: 1320px;
+        &-first-author{
+            padding: 0 0 420px 0;
+        }
+        &-second-author{
+            padding: 200px;
+        }
+    }
+}
+
+
+@media(min-width:1920px){
+    .authors{
+        height: 1380px;
+        &-first-author{
+            padding: 0 0 260px 0;
+        }
+        &-second-author{
+            padding: 400px;
+        }
+    }
+  
+}

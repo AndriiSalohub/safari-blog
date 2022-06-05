@@ -18,6 +18,7 @@ import { ArticlesList } from "../../components/Articles/ArticlesList";
 import { OurMission } from "../../components/OurMission/OurMission";
 import { ArticlesPage } from "../../pages/ArticlesPage/ArticlesPage";
 import { useSelector } from "react-redux";
+import { Authours } from "../../components/Authours/Authours";
 
 export const App = () => {
     const articlePath = useSelector((state) => state.pathDetect);
@@ -60,7 +61,8 @@ export const App = () => {
                     element={
                         <div>
                             {" "}
-                            <NavBar /> <AboutPage /> <VideoPopup />
+                            <NavBar /> <AboutPage /> <Authours />{" "}
+                            <QuoteSlider /> <VideoPopup />
                             <UpperFooter /> <Footer />
                         </div>
                     }
