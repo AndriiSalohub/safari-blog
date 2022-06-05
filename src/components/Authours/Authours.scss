@@ -59,7 +59,7 @@
     .authors{
         height: 990px;
         &-first-author{
-            padding: 0 0 430px 0;
+            padding: 0 0 525px 0;
         }
         &-second-author{
             padding: 30px;
@@ -88,16 +88,13 @@
             }
         }
     }
-    .introduce-block{
-        top: -60px !important;
-    }    
 }
 
 @media(min-width:1024px){
     .authors{
         height: 1180px;
         &-first-author{
-            padding: 0 0 490px 0;
+            padding: 0 0 590px 0;
         }
         &-second-author{
             padding: 60px;
@@ -127,7 +124,7 @@
     .authors{
         height: 1320px;
         &-first-author{
-            padding: 0 0 420px 0;
+            padding: 0 0 510px 0;
         }
         &-second-author{
             padding: 200px;
@@ -140,7 +137,7 @@
     .authors{
         height: 1380px;
         &-first-author{
-            padding: 0 0 260px 0;
+            padding: 0 0 340px 0;
         }
         &-second-author{
             padding: 400px;
