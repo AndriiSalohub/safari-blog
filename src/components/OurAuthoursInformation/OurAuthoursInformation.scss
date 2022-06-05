@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap');
+
+.our-authours-information{
+    padding: 50px 30px 50px 30px;
+    &-project-abount{
+        &-numbers{
+            text-align: center;
+            font-size: 60px;
+            line-height: 60px;
+            font-family: 'Roboto', sans-serif;
+        }
+        &-title{
+            color: #99782f;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Roboto Slab', serif;
+        }
+        &-text{
+            color: #99782f;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    &-text{
+        &-title{
+            color: #99782f;
+            font-size: 17px;
+            line-height: 21px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Roboto Slab', serif;
+        }
+    }
+}
+
+.information-text-paragraphs{
+    color: #99782f;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+@media(min-width:768px){
+    .our-authours-information{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+        &-text{
+            &-title{
+                font-size: 24px;
+                line-height: 30px;
+            }
+            &-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .our-authours-information{
+        padding: 50px 60px 50px 60px;
+        &-text{
+            &-title{
+                padding-right: 30px;
+                font-size: 28px;
+                line-height: 35px;
+            }
+            &-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    .information-text-paragraphs{
+        padding: 0 40px 0 10px;
+    }
+    
+}
+
+@media(min-width:1440px){
+    .our-authours-information{
+        padding: 50px 200px 50px 200px;
+        &-text{
+            &-title{
+                padding-right: 150px;
+            }
+        }
+    }
+    .information-text-paragraphs{
+        padding: 0 60px 0 10px;
+    }
+}
+
+@media(min-width:1920px){
+    .our-authours-information{
+        padding: 50px 400px 50px 400px;
+        &-text{
+            &-title{
+                padding-right: 200px;
+            }
+        }
+    }
+}
+
+
+
