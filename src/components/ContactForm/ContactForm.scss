@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap');
+
+.contact-form{
+    padding: 0px 30px;
+    &-title{
+        color: #99782f;
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 700;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &-block{
+        &-title{
+            color: #99782f;
+            font-size: 25px;
+            line-height: 29px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Roboto Slab', serif;
+            padding-right: 75px;
+        }
+        &-form{
+            margin-top: 30px;
+            &-input{
+                width: 100%;
+                outline: none;
+                border-bottom: 2px solid #be984f;
+                background-color: rgba(255, 255, 255, 0);
+                padding-bottom: 15px;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                margin-bottom: 12px;
+                color: #be984f;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+            &-textarea{
+                outline: none;
+                border-bottom: 2px solid #be984f;
+                background-color: rgba(255, 255, 255, 0);
+                padding-bottom: 15px;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                margin-bottom: 12px;
+                color: #be984f;
+                font-size: 15px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+::placeholder { 
+    color: #be984f;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+  }

@@ -24,6 +24,8 @@ import { ArticlesPage } from "../../pages/ArticlesPage/ArticlesPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+import { ContactUsInformation } from "../../components/ContactUsInformation/ContactUsInformation";
+import { ContactForm } from "../../components/ContactForm/ContactForm";
 
 export const App = () => {
     const articlePath = useSelector((state) => state.pathDetect);
@@ -78,7 +80,8 @@ export const App = () => {
                     element={
                         <div>
                             {" "}
-                            <NavBar /> <UpperFooter /> <Footer />
+                            <NavBar /> <ContactUsInformation /> <ContactForm />{" "}
+                            <UpperFooter /> <Footer />
                         </div>
                     }
                 />
