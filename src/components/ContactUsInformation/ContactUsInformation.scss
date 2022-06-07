@@ -57,6 +57,15 @@
                 margin: auto 0;
                 padding-left: 20px;
                 font-family: 'Roboto', sans-serif;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: text-decoration .5s ease-in-out;
+                    &:hover{
+                        text-decoration: underline;
+                        transition: text-decoration .5s ease-in-out;
+                    }
+                }
                 & span{
                     display: block;
                 }

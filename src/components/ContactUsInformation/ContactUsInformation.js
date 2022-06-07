@@ -45,7 +45,9 @@ export const ContactUsInformation = () => {
                                     className="contact-us-information-block-item-img"
                                 />
                                 <p className="contact-us-information-block-item-description">
-                                    +61 (0) 7 9180 3458
+                                    <a href="tel:+61 (0) 7 9180 3458">
+                                        +61 (0) 7 9180 3458
+                                    </a>
                                 </p>
                             </div>
                             <div className="contact-us-information-block-item">
@@ -55,7 +57,9 @@ export const ContactUsInformation = () => {
                                     className="contact-us-information-block-item-img"
                                 />
                                 <p className="contact-us-information-block-item-description">
-                                    noreply@envato.com
+                                    <a href="mailto:noreply@envato.com">
+                                        noreply@envato.com
+                                    </a>
                                 </p>
                             </div>
                             <div className="contact-us-information-block-item">
@@ -65,7 +69,13 @@ export const ContactUsInformation = () => {
                                     className="contact-us-information-block-item-img"
                                 />
                                 <p className="contact-us-information-block-item-description">
-                                    www.envato.com
+                                    <a
+                                        href="https://www.envato.com/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        www.envato.com
+                                    </a>
                                 </p>
                             </div>
                         </div>
